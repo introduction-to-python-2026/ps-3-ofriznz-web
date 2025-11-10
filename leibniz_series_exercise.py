@@ -3,6 +3,6 @@ def approximate_pi(n_terms):
     for i in range(n_terms):
         term = ((-1)**i) / (2 * i + 1)
         leibniz_series.append(term)
- sum_of_series = sum(leibniz_series)
- approx_pi = 4 * sum_of_series
- print(approx_pi)
+    sum_of_series = sum(leibniz_series)
+    approx_pi = 4 * sum_of_series
+    print(approx_pi)
