@@ -5,4 +5,4 @@ def approximate_pi(n_terms):
         leibniz_series.append(term)
     sum_of_series = sum(leibniz_series)
     approx_pi = 4 * sum_of_series
-    print(approx_pi)
+    print(approx_pi) 
