@@ -1,8 +1,12 @@
 def approximate_pi(n_terms):
-    leibniz_series = [] 
+    list_of_numbers = []
+    numerator = -1
+    denominator = -1
+    pi_sum = 0
     for i in range(n_terms):
-        term = ((-1)**i) / (2 * i + 1)
-        leibniz_series.append(term)
-    sum_of_series = sum(leibniz_series)
-    approx_pi = 4 * sum_of_series
-    print(approx_pi) 
+      numerator *= -1
+      denominator += 2
+      leibniz = numerator / denominator
+      list_of_numbers.append(leibniz)
+      pi_sum += leibniz
+    return (pi_sum *4)
